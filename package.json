@@ -1,0 +1,24 @@
+{
+  "name": "dnyaaaas",
+  "version": "0.0.1",
+  "description": "Tessel based nameserver for home networks and labs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "redis": "redis-server",
+    "dns": "sudo node_modules/dns/bin/dns"
+  },
+  "repository": "not yet",
+  "keywords": [
+    "Tessel",
+    "dns",
+    "nameserver"
+  ],
+  "license": "MIT",
+  "readme": "Tessel based nameserver for home networks and labs",
+  "devDependencies": {
+    "dns": "^0.2.2",
+    "exec": "^0.2.1",
+    "redis-server": "0.0.3"
+  }
+}
