@@ -1,31 +1,22 @@
 // Import the interface to Tessel hardware
 var tessel = require('tessel');
-
 var child_process = require('child_process');
+// exec: spawns a shell.
+child_process.exec('node awesome.js', function(error, stdout, stderr){
+	console.log(stdout);
+});
 
 
 
-// var RedisServer = require('redis-server');
-// var redisServerInstance = new RedisServer(6379);
- 
-// redisServerInstance.open(function (error) {
- 
-//   if (error) {
-//     throw new Error(error);
-//   }
- 
+// Run dns server
 
- // Run dns server
-
- // exec: spawns a shell.
+// exec: spawns a shell.
 child_process.exec('./node_modules/dns/bin/dns', function(error, stdout, stderr){
 	console.log(stdout);
 });
 
-  // The server is now up and running on port 6379, 
-  // you can now create a client to connect to the 
-  // server 
+// The server is now up and running on port 6379, 
+// you can now create a client to connect to the 
+// server 
 
 
- 
-// });
